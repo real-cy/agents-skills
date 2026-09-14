@@ -1,0 +1,19 @@
+# 本仓库只跟踪「自写 / 无上游」的技能与安装清单，用于给它们留下版本历史。
+# 建立于 2026-09-14：此前该目录不在任何 git 仓库、也无同步覆盖，改动只能靠手工 .bak 兜底。
+#
+# 被排除的两类：
+#   1) 由 .skill-lock.json 管理、可按来源仓库重装的 8 个技能（find-skills、design-taste-frontend、
+#      high-end-visual-design、industrial-brutalist-ui、minimalist-ui、stitch-design-taste、
+#      full-output-enforcement、redesign-existing-projects）——用 git 再管一遍是重复。
+#   2) ppt-master：第三方大包，79.5 MB / 12858 个文件，不适合放进 git。
+#
+# 纳入：skills/agent-iteration（自写）、skills/data-visualization（不在安装清单、无来源可重装）、
+#       .skill-lock.json（3 KB 安装清单，是恢复其余技能的依据）。
+
+/*
+!/.gitignore
+!/.skill-lock.json
+!/skills/
+/skills/*
+!/skills/agent-iteration/
+!/skills/data-visualization/
